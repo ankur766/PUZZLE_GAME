@@ -1,0 +1,11 @@
+body{background-color: rgb(43, 17, 43);
+background-repeat: no-repeat;
+background-position:center;
+background-size: cover;}
+.head{
+color: white;
+}
+
+.login_link , .login_page , .forget_page{
+    color: white;
+}

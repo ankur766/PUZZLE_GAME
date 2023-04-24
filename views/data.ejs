@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="game.css">
+	<link rel="stylesheet" type="text/css" href="background.css">
+</head>
+<body>
+	<div class="container-fluid nav">
+		<div class="row">
+			<div class="col-md-4 navh2">WELCOME : <%= name %>  😄</div>
+			<div class="col-md-4 navh3"></div>
+			<div class="col-md-4 navh4"><a  class="logout"href="/logout">Logout</a></div>
+		  </div>
+		
+	
+	  </div>
+
+	  <span id="timer">Time left :</span>
+		<div class="gamebody">
+			
+			<div class="game">
+				<div class="grid">
+				  <button class="tile"></button>
+				  <button class="tile"</button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				  <button class="tile"></button>
+				</div>
+				<span class="message">You win!</span>
+				<div class="footer">
+				  <button onclick="solvePuzzle()"  id="start-button">Play</button>
+				  
+				  <span id="move">Move: 100</span>
+				  <span id="time">Time: 100</span>
+				</div>
+			  </div>
+			  <div id="puzzle">
+				<!-- Puzzle pieces go here -->
+				<span id="message"></span>
+				
+			  </div>
+			  
+			  <h3  id="hint-button " class="popup" onclick="myFunction()"> 👉 Need a hint !
+				<span class="popuptext" id="myPopup">
+					<ul>
+						<li>Move 14 down, 15 left (2 moves)</li>
+						<li>Move 13 up (1 move)</li>
+						<li>Move 14 right, 15 up, 12 up (3 moves)</li>
+						<li>Move 11 down (1 move)</li>
+						<li>Move 15 right, 14 down, 10 down (3 moves)</li>
+						</ul>
+				</span>
+			  </div>
+			 
+		
+	<script src="game.js"></script>
+	<script src="timeleft.js"></script>
+	<script src="solution_dead.js"></script>
+
+</body>
+</html>
